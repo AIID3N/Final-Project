@@ -13,17 +13,52 @@
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 [Aa]ssets/Sun_Temple/
-[Aa]ssets/Greek Monster Pack/
 [Aa]ssets/Rock and Boulders 2/
 [Aa]ssets/Cartoon Heroes/
 [Aa]ssets/AllSkyFree/
 [Aa]ssets/SFX/
 [Aa]ssets/cave_troll/
-[Aa]ssets/LowPoly Fantasy Monsters Pack Ver1.0_Demo/
 [Aa]ssets/UF Creator LITE/
 [Aa]ssets/EffectExamples/
 [Aa]ssets/Rhino/
-[Aa]ssets/Rocks and Boulders 2/
+[Aa]ssets/Altar_Ruins_FREE/
+[Aa]ssets/AncientRuins/
+[Aa]ssets/AQUAS-Lite/
+[Aa]ssets/ASTROFISH_GAMES/
+[Aa]ssets/AstrofishGames/
+[Aa]ssets/CentaurBad/
+[Aa]ssets/Concrete textures pack/
+[Aa]ssets/Dessert/
+[Aa]ssets/Double axe/
+[Aa]ssets/DungeonCharacters/
+[Aa]ssets/EmaceArt - raft on the desert/
+[Aa]ssets/FantasyPrefabs/
+[Aa]ssets/GrassTextures/
+[Aa]ssets/GreenBugGames/
+[Aa]ssets/AstrofishGames/
+[Aa]ssets/IgniteCoders/
+[Aa]ssets/klen/
+[Aa]ssets/laxer Assets/
+[Aa]ssets/LB3D/
+[Aa]ssets/LowlyPoly/
+[Aa]ssets/Lowpoly Wells/
+[Aa]ssets/MapleTree/
+[Aa]ssets/Mine/
+[Aa]ssets/Nature_Shield/
+[Aa]ssets/ObstacleCoursePack/
+[Aa]ssets/OldBridge/
+[Aa]ssets/Polygrade/
+[Aa]ssets/QS/
+[Aa]ssets/RTP Vol.1/
+[Aa]ssets/Shared/
+[Aa]ssets/Stylized_Labs/
+[Aa]ssets/Toby Fredson/
+[Aa]ssets/Troncos/
+[Aa]ssets/True_Fantastic_Creatures/
+[Aa]ssets/Windmill/
+[Aa]ssets/YughuesFreeBushes2018/
+
+
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 
