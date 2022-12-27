@@ -4,4 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/Menu.unity
+    guid: e96af13bd2ddd2840bf7659221f1bfd9
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Level2.unity
+    guid: 0a7a0381edea42540a878da187413e37
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/Instructions1.unity
+    guid: 7d0fd05d291cba846a6f7ad67ec37394
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/Instructions2.unity
+    guid: 726ecf4dd1972144991d45ad2792a044
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/Credits.unity
+    guid: 7934176852fbf73429fb4d89a68bfc88
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/Winner.unity
+    guid: 4ba4ea1909f90ec48b3139a609c2406e
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Canvas/GameOver.unity
+    guid: 571ceb2976a9fcb47863e656d0ec23b6
+  m_configObjects: {}
