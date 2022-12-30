@@ -9,14 +9,20 @@ EditorBuildSettings:
     path: Assets/CompleteProyect/Scenes/Canvas/Menu.unity
     guid: e96af13bd2ddd2840bf7659221f1bfd9
   - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Level1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/CompleteProyect/Scenes/Level2.unity
     guid: 0a7a0381edea42540a878da187413e37
+  - enabled: 1
+    path: Assets/CompleteProyect/Scenes/Level3.unity
+    guid: d8f213b28287d8b4dab42cf4a34f94e5
   - enabled: 1
     path: Assets/CompleteProyect/Scenes/Canvas/Instructions1.unity
     guid: 7d0fd05d291cba846a6f7ad67ec37394
   - enabled: 1
     path: Assets/CompleteProyect/Scenes/Canvas/Instructions2.unity
-    guid: 726ecf4dd1972144991d45ad2792a044
+    guid: 156d2ba36a3b829408d233e0a0d378a2
   - enabled: 1
     path: Assets/CompleteProyect/Scenes/Canvas/Credits.unity
     guid: 7934176852fbf73429fb4d89a68bfc88
