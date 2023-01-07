@@ -17,6 +17,11 @@ namespace Invector.vCharacterController
         public string rotateCameraXInput = "Mouse X";
         public string rotateCameraYInput = "Mouse Y";
 
+        [Header("Audio")]
+        public AudioSource run;
+        private bool HActive; //Verificación si soltó o no la tecla
+        private bool VActive; //Verificación si soltó o no la tecla
+
         [HideInInspector] public vThirdPersonController cc;
         [HideInInspector] public vThirdPersonCamera tpCamera;
         [HideInInspector] public Camera cameraMain;
@@ -85,6 +90,32 @@ namespace Invector.vCharacterController
         {
             cc.input.x = Input.GetAxis(horizontalInput);
             cc.input.z = Input.GetAxis(verticallInput);
+            if (Input.GetButtonDown("Horizontal"))
+            { //Si oprime la tecla, reproduzca sonido
+                HActive = true; //Valida que si esté presionada
+                run.Play();
+            }
+            if (Input.GetButtonDown("Vertical"))
+            { //Si oprime la tecla, reproduzca sonido
+                VActive = true; //Valida que si esté presionada
+                run.Play();
+            }
+            if (Input.GetButtonUp("Horizontal"))
+            { //Si no oprime la tecla, pause sonido
+                HActive = false; //Valida que no esté presionada
+                if (VActive == false)
+                {
+                    run.Pause();
+                }
+            }
+            if (Input.GetButtonUp("Vertical"))
+            { //Si no oprime la tecla, pause sonido
+                VActive = false; //Valida que no esté presionada
+                if (HActive == false)
+                {
+                    run.Pause();
+                }
+            }
         }
 
         protected virtual void CameraInput()
