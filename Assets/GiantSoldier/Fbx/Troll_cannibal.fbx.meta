@@ -1,175 +1,467 @@
 fileFormatVersion: 2
 guid: 8c7460f96e8004b4f8ccca93f126e395
-timeCreated: 1517663063
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: base
-    100002: bone
-    100004: chest
-    100006: Elbow.L
-    100008: Elbow.L_end
-    100010: Elbow.R
-    100012: Elbow.R_end
-    100014: f_ring.01.L
-    100016: f_ring.01.R
-    100018: f_ring.02.L
-    100020: f_ring.02.L_end
-    100022: f_ring.02.R
-    100024: f_ring.02.R_end
-    100026: foot.L
-    100028: foot.L_end
-    100030: foot.R
-    100032: foot.R_end
-    100034: foot_IK.L
-    100036: foot_IK.R
-    100038: forearm.L
-    100040: forearm.R
-    100042: hand.L
-    100044: hand.R
-    100046: hand_IK.L
-    100048: hand_IK.L_end
-    100050: hand_IK.R
-    100052: hand_IK.R_end
-    100054: head
-    100056: head_end
-    100058: hips
-    100060: knee.L
-    100062: knee.L_end
-    100064: knee.R
-    100066: knee.R_end
-    100068: palm.03.L
-    100070: palm.03.R
-    100072: shin.L
-    100074: shin.L_end
-    100076: shin.R
-    100078: shin.R_end
-    100080: spine
-    100082: thigh.L
-    100084: thigh.R
-    100086: thumb.02.L
-    100088: thumb.02.R
-    100090: thumb.03.L
-    100092: thumb.03.L_end
-    100094: thumb.03.R
-    100096: thumb.03.R_end
-    100098: troll
-    100100: //RootNode
-    100102: Ttoll
-    100104: upper_arm.L
-    100106: upper_arm.R
-    100108: upper_armor.L
-    100110: upper_armor.L_end
-    100112: upper_armor.R
-    100114: upper_armor.R_end
-    100116: weapon
-    100118: weapon_end
-    400000: base
-    400002: bone
-    400004: chest
-    400006: Elbow.L
-    400008: Elbow.L_end
-    400010: Elbow.R
-    400012: Elbow.R_end
-    400014: f_ring.01.L
-    400016: f_ring.01.R
-    400018: f_ring.02.L
-    400020: f_ring.02.L_end
-    400022: f_ring.02.R
-    400024: f_ring.02.R_end
-    400026: foot.L
-    400028: foot.L_end
-    400030: foot.R
-    400032: foot.R_end
-    400034: foot_IK.L
-    400036: foot_IK.R
-    400038: forearm.L
-    400040: forearm.R
-    400042: hand.L
-    400044: hand.R
-    400046: hand_IK.L
-    400048: hand_IK.L_end
-    400050: hand_IK.R
-    400052: hand_IK.R_end
-    400054: head
-    400056: head_end
-    400058: hips
-    400060: knee.L
-    400062: knee.L_end
-    400064: knee.R
-    400066: knee.R_end
-    400068: palm.03.L
-    400070: palm.03.R
-    400072: shin.L
-    400074: shin.L_end
-    400076: shin.R
-    400078: shin.R_end
-    400080: spine
-    400082: thigh.L
-    400084: thigh.R
-    400086: thumb.02.L
-    400088: thumb.02.R
-    400090: thumb.03.L
-    400092: thumb.03.L_end
-    400094: thumb.03.R
-    400096: thumb.03.R_end
-    400098: troll
-    400100: //RootNode
-    400102: Ttoll
-    400104: upper_arm.L
-    400106: upper_arm.R
-    400108: upper_armor.L
-    400110: upper_armor.L_end
-    400112: upper_armor.R
-    400114: upper_armor.R_end
-    400116: weapon
-    400118: weapon_end
-    4300000: Ttoll
-    4300002: bone
-    7400000: troll|trollAction
-    7400002: idle
-    7400004: walk
-    7400006: run
-    7400008: idle battl
-    7400010: attack 1
-    7400012: attack 2
-    7400014: attack 3
-    7400016: attack 4
-    7400018: cast
-    7400020: defence
-    7400022: hit 1
-    7400024: hit 2
-    7400026: death 1
-    7400028: death 2
-    7400030: jump
-    7400032: victory
-    9500000: //RootNode
-    13700000: bone
-    13700002: Ttoll
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: base
+  - first:
+      1: 100002
+    second: bone
+  - first:
+      1: 100004
+    second: chest
+  - first:
+      1: 100006
+    second: Elbow.L
+  - first:
+      1: 100008
+    second: Elbow.L_end
+  - first:
+      1: 100010
+    second: Elbow.R
+  - first:
+      1: 100012
+    second: Elbow.R_end
+  - first:
+      1: 100014
+    second: f_ring.01.L
+  - first:
+      1: 100016
+    second: f_ring.01.R
+  - first:
+      1: 100018
+    second: f_ring.02.L
+  - first:
+      1: 100020
+    second: f_ring.02.L_end
+  - first:
+      1: 100022
+    second: f_ring.02.R
+  - first:
+      1: 100024
+    second: f_ring.02.R_end
+  - first:
+      1: 100026
+    second: foot.L
+  - first:
+      1: 100028
+    second: foot.L_end
+  - first:
+      1: 100030
+    second: foot.R
+  - first:
+      1: 100032
+    second: foot.R_end
+  - first:
+      1: 100034
+    second: foot_IK.L
+  - first:
+      1: 100036
+    second: foot_IK.R
+  - first:
+      1: 100038
+    second: forearm.L
+  - first:
+      1: 100040
+    second: forearm.R
+  - first:
+      1: 100042
+    second: hand.L
+  - first:
+      1: 100044
+    second: hand.R
+  - first:
+      1: 100046
+    second: hand_IK.L
+  - first:
+      1: 100048
+    second: hand_IK.L_end
+  - first:
+      1: 100050
+    second: hand_IK.R
+  - first:
+      1: 100052
+    second: hand_IK.R_end
+  - first:
+      1: 100054
+    second: head
+  - first:
+      1: 100056
+    second: head_end
+  - first:
+      1: 100058
+    second: hips
+  - first:
+      1: 100060
+    second: knee.L
+  - first:
+      1: 100062
+    second: knee.L_end
+  - first:
+      1: 100064
+    second: knee.R
+  - first:
+      1: 100066
+    second: knee.R_end
+  - first:
+      1: 100068
+    second: palm.03.L
+  - first:
+      1: 100070
+    second: palm.03.R
+  - first:
+      1: 100072
+    second: shin.L
+  - first:
+      1: 100074
+    second: shin.L_end
+  - first:
+      1: 100076
+    second: shin.R
+  - first:
+      1: 100078
+    second: shin.R_end
+  - first:
+      1: 100080
+    second: spine
+  - first:
+      1: 100082
+    second: thigh.L
+  - first:
+      1: 100084
+    second: thigh.R
+  - first:
+      1: 100086
+    second: thumb.02.L
+  - first:
+      1: 100088
+    second: thumb.02.R
+  - first:
+      1: 100090
+    second: thumb.03.L
+  - first:
+      1: 100092
+    second: thumb.03.L_end
+  - first:
+      1: 100094
+    second: thumb.03.R
+  - first:
+      1: 100096
+    second: thumb.03.R_end
+  - first:
+      1: 100098
+    second: troll
+  - first:
+      1: 100100
+    second: //RootNode
+  - first:
+      1: 100102
+    second: Ttoll
+  - first:
+      1: 100104
+    second: upper_arm.L
+  - first:
+      1: 100106
+    second: upper_arm.R
+  - first:
+      1: 100108
+    second: upper_armor.L
+  - first:
+      1: 100110
+    second: upper_armor.L_end
+  - first:
+      1: 100112
+    second: upper_armor.R
+  - first:
+      1: 100114
+    second: upper_armor.R_end
+  - first:
+      1: 100116
+    second: weapon
+  - first:
+      1: 100118
+    second: weapon_end
+  - first:
+      4: 400000
+    second: base
+  - first:
+      4: 400002
+    second: bone
+  - first:
+      4: 400004
+    second: chest
+  - first:
+      4: 400006
+    second: Elbow.L
+  - first:
+      4: 400008
+    second: Elbow.L_end
+  - first:
+      4: 400010
+    second: Elbow.R
+  - first:
+      4: 400012
+    second: Elbow.R_end
+  - first:
+      4: 400014
+    second: f_ring.01.L
+  - first:
+      4: 400016
+    second: f_ring.01.R
+  - first:
+      4: 400018
+    second: f_ring.02.L
+  - first:
+      4: 400020
+    second: f_ring.02.L_end
+  - first:
+      4: 400022
+    second: f_ring.02.R
+  - first:
+      4: 400024
+    second: f_ring.02.R_end
+  - first:
+      4: 400026
+    second: foot.L
+  - first:
+      4: 400028
+    second: foot.L_end
+  - first:
+      4: 400030
+    second: foot.R
+  - first:
+      4: 400032
+    second: foot.R_end
+  - first:
+      4: 400034
+    second: foot_IK.L
+  - first:
+      4: 400036
+    second: foot_IK.R
+  - first:
+      4: 400038
+    second: forearm.L
+  - first:
+      4: 400040
+    second: forearm.R
+  - first:
+      4: 400042
+    second: hand.L
+  - first:
+      4: 400044
+    second: hand.R
+  - first:
+      4: 400046
+    second: hand_IK.L
+  - first:
+      4: 400048
+    second: hand_IK.L_end
+  - first:
+      4: 400050
+    second: hand_IK.R
+  - first:
+      4: 400052
+    second: hand_IK.R_end
+  - first:
+      4: 400054
+    second: head
+  - first:
+      4: 400056
+    second: head_end
+  - first:
+      4: 400058
+    second: hips
+  - first:
+      4: 400060
+    second: knee.L
+  - first:
+      4: 400062
+    second: knee.L_end
+  - first:
+      4: 400064
+    second: knee.R
+  - first:
+      4: 400066
+    second: knee.R_end
+  - first:
+      4: 400068
+    second: palm.03.L
+  - first:
+      4: 400070
+    second: palm.03.R
+  - first:
+      4: 400072
+    second: shin.L
+  - first:
+      4: 400074
+    second: shin.L_end
+  - first:
+      4: 400076
+    second: shin.R
+  - first:
+      4: 400078
+    second: shin.R_end
+  - first:
+      4: 400080
+    second: spine
+  - first:
+      4: 400082
+    second: thigh.L
+  - first:
+      4: 400084
+    second: thigh.R
+  - first:
+      4: 400086
+    second: thumb.02.L
+  - first:
+      4: 400088
+    second: thumb.02.R
+  - first:
+      4: 400090
+    second: thumb.03.L
+  - first:
+      4: 400092
+    second: thumb.03.L_end
+  - first:
+      4: 400094
+    second: thumb.03.R
+  - first:
+      4: 400096
+    second: thumb.03.R_end
+  - first:
+      4: 400098
+    second: troll
+  - first:
+      4: 400100
+    second: //RootNode
+  - first:
+      4: 400102
+    second: Ttoll
+  - first:
+      4: 400104
+    second: upper_arm.L
+  - first:
+      4: 400106
+    second: upper_arm.R
+  - first:
+      4: 400108
+    second: upper_armor.L
+  - first:
+      4: 400110
+    second: upper_armor.L_end
+  - first:
+      4: 400112
+    second: upper_armor.R
+  - first:
+      4: 400114
+    second: upper_armor.R_end
+  - first:
+      4: 400116
+    second: weapon
+  - first:
+      4: 400118
+    second: weapon_end
+  - first:
+      43: 4300000
+    second: Ttoll
+  - first:
+      43: 4300002
+    second: bone
+  - first:
+      74: 7400000
+    second: troll|trollAction
+  - first:
+      74: 7400002
+    second: idle
+  - first:
+      74: 7400004
+    second: walk
+  - first:
+      74: 7400006
+    second: run
+  - first:
+      74: 7400008
+    second: idle battl
+  - first:
+      74: 7400010
+    second: attack 1
+  - first:
+      74: 7400012
+    second: attack 2
+  - first:
+      74: 7400014
+    second: attack 3
+  - first:
+      74: 7400016
+    second: attack 4
+  - first:
+      74: 7400018
+    second: cast
+  - first:
+      74: 7400020
+    second: defence
+  - first:
+      74: 7400022
+    second: hit 1
+  - first:
+      74: 7400024
+    second: hit 2
+  - first:
+      74: 7400026
+    second: death 1
+  - first:
+      74: 7400028
+    second: death 2
+  - first:
+      74: 7400030
+    second: jump
+  - first:
+      74: 7400032
+    second: victory
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: bone
+  - first:
+      137: 13700002
+    second: Ttoll
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: troll|trollAction
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 0
       lastFrame: 1950
       wrapMode: 0
@@ -177,7 +469,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -313,9 +606,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 100
       lastFrame: 210
       wrapMode: 0
@@ -323,6 +618,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -459,9 +755,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: walk
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 300
       lastFrame: 340
       wrapMode: 0
@@ -469,6 +767,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -605,9 +904,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle battl
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 400
       lastFrame: 520
       wrapMode: 0
@@ -615,6 +916,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -751,9 +1053,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: run
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 600
       lastFrame: 630
       wrapMode: 0
@@ -761,6 +1065,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -897,9 +1202,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack 1
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 700
       lastFrame: 735
       wrapMode: 0
@@ -907,7 +1214,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1043,9 +1351,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack 2
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 800
       lastFrame: 830
       wrapMode: 0
@@ -1053,6 +1363,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1189,9 +1500,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack 3
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 900
       lastFrame: 930
       wrapMode: 0
@@ -1199,6 +1512,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1335,9 +1649,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack 4
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1000
       lastFrame: 1030
       wrapMode: 0
@@ -1345,6 +1661,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1481,9 +1798,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: cast
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1100
       lastFrame: 1200
       wrapMode: 0
@@ -1491,6 +1810,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1627,9 +1947,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: defence
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1300
       lastFrame: 1350
       wrapMode: 0
@@ -1637,6 +1959,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1773,9 +2096,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: hit 1
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1400
       lastFrame: 1410
       wrapMode: 0
@@ -1783,6 +2108,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1919,9 +2245,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: hit 2
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1500
       lastFrame: 1510
       wrapMode: 0
@@ -1929,6 +2257,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2065,9 +2394,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: death 1
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1600
       lastFrame: 1635
       wrapMode: 0
@@ -2075,6 +2406,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2211,9 +2543,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: death 2
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1700
       lastFrame: 1740
       wrapMode: 0
@@ -2221,6 +2555,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2357,9 +2692,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: jump
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1800
       lastFrame: 1825
       wrapMode: 0
@@ -2367,6 +2704,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2503,9 +2841,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: victory
       takeName: troll|trollAction
+      internalID: 0
       firstFrame: 1900
       lastFrame: 1950
       wrapMode: 0
@@ -2513,6 +2853,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2649,44 +2990,75 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

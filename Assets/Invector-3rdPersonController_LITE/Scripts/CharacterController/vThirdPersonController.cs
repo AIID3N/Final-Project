@@ -4,6 +4,8 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
+
+
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
@@ -123,6 +125,61 @@ namespace Invector.vCharacterController
                 animator.CrossFadeInFixedTime("Jump", 0.1f);
             else
                 animator.CrossFadeInFixedTime("JumpMove", .2f);
+        }
+
+        public virtual void AtackSword()
+        {
+            if (CollisionPlayer.instance.isChange)
+            {
+                //animator.CrossFadeInFixedTime("AtackSword", 0.2f);
+                animator.SetBool("AtackSword", true);
+
+                CollisionPlayer.instance.swordObject.GetComponent<BoxCollider>().enabled = true;
+
+                Invoke("StopSwordAtack", 1.2f);
+            }
+          
+
+
+        }
+
+        public virtual void StopSwordAtack()
+        {
+ 
+            animator.SetBool("AtackSword", false);
+              CollisionPlayer.instance.swordObject.GetComponent<BoxCollider>().enabled = false;
+
+
+        }
+
+        public virtual void Pause()
+        {
+            InterfacePlayer.instance.PauseInterface();
+        }
+
+
+        public virtual void ShootBow()
+        {
+            if (!CollisionPlayer.instance.isChange)
+            {
+                animator.SetBool("AtackBow", true);
+                BowMechanic.instance.ArrowShoot();
+                Invoke("StopShootBOw", 1.2f);
+            }
+        
+
+
+        }
+
+        public virtual void StopShootBOw()
+        {
+            animator.SetBool("AtackBow", false);
+
+        }
+
+        public virtual void ChangeWeapon()
+        {
+            CollisionPlayer.instance.ChangeWeapon();
         }
     }
 }

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Enemy
+  - Sword
+  - SwordGrab
+  - BowGrab
+  - Arrow
   layers:
   - Default
   - TransparentFX

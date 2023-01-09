@@ -12,6 +12,12 @@ namespace Invector.vCharacterController
         public KeyCode jumpInput = KeyCode.Space;
         public KeyCode strafeInput = KeyCode.Tab;
         public KeyCode sprintInput = KeyCode.LeftShift;
+        public KeyCode pauseInput = KeyCode.Escape;
+        public KeyCode changeWeaponInput = KeyCode.Tab;
+        public bool isAtackSword = true;
+        public bool isBowShot = true;
+        public bool canShoot = false;
+
 
         [Header("Camera Input")]
         public string rotateCameraXInput = "Mouse X";
@@ -84,6 +90,10 @@ namespace Invector.vCharacterController
             SprintInput();
             StrafeInput();
             JumpInput();
+            AtackSwordInput();
+            PauseInput();
+            ShoowBowInput();
+            ChangeWeaponInput();
         }
 
         public virtual void MoveInput()
@@ -146,9 +156,10 @@ namespace Invector.vCharacterController
 
         protected virtual void StrafeInput()
         {
-            if (Input.GetKeyDown(strafeInput))
+           /* if (Input.GetKeyDown(strafeInput))
                 cc.Strafe();
-        }
+        */
+            }
 
         protected virtual void SprintInput()
         {
@@ -175,6 +186,52 @@ namespace Invector.vCharacterController
             if (Input.GetKeyDown(jumpInput) && JumpConditions())
                 cc.Jump();
         }
+
+
+        protected virtual void AtackSwordInput()
+        {
+            if (Input.GetMouseButton(0) && isAtackSword)
+            {
+                isAtackSword = false;
+                cc.AtackSword();
+            }
+            else
+            {
+                isAtackSword = true;
+            }
+        }
+
+        protected virtual void ShoowBowInput()
+        {
+            if (Input.GetMouseButton(0) && isBowShot)
+            {
+                isBowShot = false;
+                cc.ShootBow();
+            }
+            else
+            {
+                isBowShot = true;
+            }
+        }
+
+        protected virtual void ChangeWeaponInput()
+        {
+            if (Input.GetKeyDown(changeWeaponInput))
+            {
+                cc.ChangeWeapon();
+            }
+        }
+
+        protected virtual void PauseInput()
+        {
+            if(Input.GetKeyDown(pauseInput))
+                 cc.Pause();
+
+        }
+
+
+
+
 
         #endregion       
     }
