@@ -10,6 +10,7 @@ TagManager:
   - SwordGrab
   - BowGrab
   - Arrow
+  - ElixirGrab
   layers:
   - Default
   - TransparentFX

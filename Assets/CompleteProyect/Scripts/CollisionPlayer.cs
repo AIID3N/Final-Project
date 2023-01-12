@@ -50,6 +50,11 @@ public class CollisionPlayer : MonoBehaviour
             collision.gameObject.SetActive(false);
 
         }
+        if (collision.transform.CompareTag("Elixir"))
+        {
+            collision.gameObject.SetActive(false);
+            InterfacePlayer.instance.lifeImage.fillAmount += 3f * Time.deltaTime; ;
+        }
     }
 
 
