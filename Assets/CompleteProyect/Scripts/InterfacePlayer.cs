@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class InterfacePlayer : MonoBehaviour
 {
     public Image lifeImage;
@@ -40,9 +41,17 @@ public class InterfacePlayer : MonoBehaviour
         lifeImage.fillAmount -= 1f * Time.deltaTime;
         if (lifeImage.fillAmount == 0)
         {
-            print("GameOver");
+          SceneManager.LoadScene("GameOver");
         }
     }
+
+    public void fireLessLifeImage(){
+          lifeImage.fillAmount -= 0.1f * Time.deltaTime;
+        if (lifeImage.fillAmount == 0)
+        {
+          SceneManager.LoadScene("GameOver");
+        }
+    } 
 
     public void PauseInterface()
     {

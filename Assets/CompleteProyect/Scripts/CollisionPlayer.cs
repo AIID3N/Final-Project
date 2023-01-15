@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CollisionPlayer : MonoBehaviour
 {
     public GameObject swordObject;
@@ -50,14 +50,27 @@ public class CollisionPlayer : MonoBehaviour
             collision.gameObject.SetActive(false);
 
         }
-        if (collision.transform.CompareTag("Elixir"))
+        if (collision.transform.CompareTag("ElixirGrab"))
         {
             collision.gameObject.SetActive(false);
-            InterfacePlayer.instance.lifeImage.fillAmount += 3f * Time.deltaTime; ;
+            InterfacePlayer.instance.lifeImage.fillAmount += 3f * Time.deltaTime; 
+
         }
+
+        if(collision.transform.CompareTag("BadWall")){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
     }
 
+   
 
+    private void OnTriggerStay(Collider other) {
+        if(other.transform.CompareTag("Fire")){
+              InterfacePlayer.instance.fireLessLifeImage();
+
+        }
+    }
     public void ChangeWeapon()
     {
         if (isChange)

@@ -12,6 +12,7 @@ public class MinotaurEnemy : MonoBehaviour
     public bool IsMovingAtack = true;
     public GameObject hammerEnemy;
     public Image lifeEnemy;
+    public bool IsDead = false;
     private void Start()
     {
         lifeEnemyTest = 100;
@@ -28,7 +29,9 @@ public class MinotaurEnemy : MonoBehaviour
 
     private void Update()
     {
-        float dist = Vector3.Distance(Player.position, transform.position);
+
+        if(!IsDead){
+ float dist = Vector3.Distance(Player.position, transform.position);
         // print(dist);
 
         if (dist < 6)
@@ -45,6 +48,8 @@ public class MinotaurEnemy : MonoBehaviour
             animatorEnemy.SetInteger("NumState", 13);
 
         }
+        }
+       
 
 
 
@@ -67,6 +72,7 @@ public class MinotaurEnemy : MonoBehaviour
             lifeEnemy.fillAmount -= 10f * Time.deltaTime;
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead= true;
                 animatorEnemy.SetInteger("NumState", 28);
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
                 Destroy(gameObject, 3f);
@@ -76,6 +82,7 @@ public class MinotaurEnemy : MonoBehaviour
 
         if (collision.collider.CompareTag("Arrow"))
         {
+
             gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(7f, 0, 7f), ForceMode.Impulse);
             print(lifeEnemyTest);
             lifeEnemyTest = lifeEnemyTest - 10;
@@ -83,6 +90,7 @@ public class MinotaurEnemy : MonoBehaviour
 
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead=true;
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
                 animatorEnemy.SetInteger("NumState", 28);

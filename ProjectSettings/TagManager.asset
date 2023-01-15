@@ -11,6 +11,8 @@ TagManager:
   - BowGrab
   - Arrow
   - ElixirGrab
+  - Fire
+  - BadWall
   layers:
   - Default
   - TransparentFX

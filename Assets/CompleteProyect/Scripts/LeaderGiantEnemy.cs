@@ -11,8 +11,9 @@ public class LeaderGiantEnemy : MonoBehaviour
     public Transform cross;
     public Image lifeEnemy;
     public Animator animatorEnemy;
-
+   public GameObject doorObject;
     public bool IsAtackPlayer= true;
+    public bool IsDead = false;
 
 
 
@@ -21,6 +22,29 @@ public class LeaderGiantEnemy : MonoBehaviour
         StartCoroutine("AtackPlayer");
     }
 
+    private void Update() {
+float dist = Vector3.Distance(player.position, transform.position);
+        print(dist);
+      
+/*
+        if(dist <33){
+        launchForce = 15;
+        launchAngle = 20f;
+        }
+
+        if(dist < 20){
+            launchForce = 10;
+        }
+        if(dist < 15){
+            launchForce = 8;
+        }
+        if(dist< 10){
+          launchForce = 5;
+        launchAngle = 10f;  
+        }
+
+        */
+    }
 
 
     public void LaunchProjectile(Vector3 targetPosition)
@@ -39,13 +63,14 @@ public class LeaderGiantEnemy : MonoBehaviour
         // Instantiate and launch the projectile
         GameObject projectile = Instantiate(projectilePrefab, cross.position, Quaternion.identity);
         projectile.GetComponent<Rigidbody>().velocity = launchVelocity;
+        Destroy(projectile, 3f);
     }
 
    
 
     public IEnumerator AtackPlayer()
     {
-        while (IsAtackPlayer)
+        while (IsAtackPlayer && !IsDead)
         {
             animatorEnemy.SetTrigger("attack1");
             yield return new WaitForSeconds(1f);
@@ -68,10 +93,13 @@ public class LeaderGiantEnemy : MonoBehaviour
             lifeEnemy.fillAmount -= 10f * Time.deltaTime;
             if (lifeEnemy.fillAmount <= 0)
             {
+               IsDead = true;
                 animatorEnemy.SetTrigger("death");
                 IsAtackPlayer = false;
                 StopCoroutine("AtackPlayer");
-                Destroy(gameObject,3f);
+              //  Destroy(gameObject,3f);
+                doorObject.GetComponent<BoxCollider>().enabled = true;
+
             }
 
         }
@@ -84,11 +112,14 @@ public class LeaderGiantEnemy : MonoBehaviour
 
             if (lifeEnemy.fillAmount <= 0)
             {
+
+                 IsDead = true;
                 StopCoroutine("AtackPlayer");
 
                 animatorEnemy.SetTrigger("death");
+                doorObject.GetComponent<BoxCollider>().enabled = true;
 
-                Destroy(gameObject,3f);
+             //   Destroy(gameObject,3f);
             }
         }
     }

@@ -13,6 +13,9 @@ public class CentaurLeaderEnemy : MonoBehaviour
     public bool IsMovingAtack = true;
     public GameObject hammerEnemy;
     public Image lifeEnemy;
+    public GameObject doorObject;
+    public bool IsDead = false;
+
     private void Start()
     {
         lifeEnemyTest = 100;
@@ -29,7 +32,9 @@ public class CentaurLeaderEnemy : MonoBehaviour
 
     private void Update()
     {
-        float dist = Vector3.Distance(Player.position, transform.position);
+
+        if(!IsDead){
+  float dist = Vector3.Distance(Player.position, transform.position);
         // print(dist);
 
         if (dist < 6)
@@ -41,12 +46,14 @@ public class CentaurLeaderEnemy : MonoBehaviour
 
         }
 
-        if (dist < 1)
+        if (dist < 2)
         {
             animatorEnemy.SetInteger("NumState", 13);
 
         }
 
+        }
+      
 
 
 
@@ -68,9 +75,12 @@ public class CentaurLeaderEnemy : MonoBehaviour
             lifeEnemy.fillAmount -= 10f * Time.deltaTime;
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead = true;
                 animatorEnemy.SetInteger("NumState", 28);
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
-                Destroy(gameObject, 3f);
+                doorObject.GetComponent<BoxCollider>().enabled = true;
+              
+              //  Destroy(gameObject, 3f);
             }
 
         }
@@ -84,11 +94,12 @@ public class CentaurLeaderEnemy : MonoBehaviour
 
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead = true;
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
                 animatorEnemy.SetInteger("NumState", 28);
-
-                Destroy(gameObject, 3f);
+                doorObject.GetComponent<BoxCollider>().enabled = true;
+             //   Destroy(gameObject, 3f);
             }
         }
     }

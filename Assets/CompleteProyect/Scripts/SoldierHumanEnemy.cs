@@ -13,6 +13,8 @@ public class SoldierHumanEnemy : MonoBehaviour
     public bool IsMovingAtack = true;
     public GameObject hammerEnemy;
     public Image lifeEnemy;
+    public bool IsDead = false;
+
     private void Start()
     {
         lifeEnemyTest = 100;
@@ -29,6 +31,8 @@ public class SoldierHumanEnemy : MonoBehaviour
 
     private void Update()
     {
+
+        if(!IsDead){
         float dist = Vector3.Distance(Player.position, transform.position);
         // print(dist);
 
@@ -37,7 +41,7 @@ public class SoldierHumanEnemy : MonoBehaviour
             enemy.SetDestination(Player.position);
 
             animatorEnemy.SetInteger("NumState", 1);
-
+            animatorEnemy.CrossFadeInFixedTime("NumState", 0.1f);
 
         }
 
@@ -46,6 +50,8 @@ public class SoldierHumanEnemy : MonoBehaviour
             animatorEnemy.SetInteger("NumState", 13);
 
         }
+        }
+        
 
 
 
@@ -68,9 +74,10 @@ public class SoldierHumanEnemy : MonoBehaviour
             lifeEnemy.fillAmount -= 10f * Time.deltaTime;
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead = true;
                 animatorEnemy.SetInteger("NumState",28);
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
-                Destroy(gameObject,3f);
+               Destroy(gameObject,4f);
             }
 
         }
@@ -84,11 +91,13 @@ public class SoldierHumanEnemy : MonoBehaviour
 
             if (lifeEnemy.fillAmount <= 0)
             {
+                IsDead = true;
+
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
                 animatorEnemy.SetInteger("NumState",28);
 
-                Destroy(gameObject,3f);
+               Destroy(gameObject,4f);
             }
         }
     }

@@ -36,15 +36,15 @@ public class CentaurEnemy : MonoBehaviour
         {
             enemy.SetDestination(Player.position);
 
-            animatorEnemy.SetInteger("NumState", 1);
+          //  animatorEnemy.SetInteger("NumState", 1);
 
 
         }
 
         if (dist < 1)
         {
-            animatorEnemy.SetInteger("NumState", 13);
-
+            //animatorEnemy.SetInteger("NumState", 13);
+           
         }
 
 
@@ -68,7 +68,7 @@ public class CentaurEnemy : MonoBehaviour
             lifeEnemy.fillAmount -= 10f * Time.deltaTime;
             if (lifeEnemy.fillAmount <= 0)
             {
-                animatorEnemy.SetInteger("NumState", 28);
+              //  animatorEnemy.SetInteger("NumState", 28);
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
                 Destroy(gameObject, 3f);
             }
@@ -86,7 +86,7 @@ public class CentaurEnemy : MonoBehaviour
             {
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
-                animatorEnemy.SetInteger("NumState", 28);
+              //  animatorEnemy.SetInteger("NumState", 28);
 
                 Destroy(gameObject, 3f);
             }
