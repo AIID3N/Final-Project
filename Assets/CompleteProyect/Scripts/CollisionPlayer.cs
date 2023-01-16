@@ -8,6 +8,7 @@ public class CollisionPlayer : MonoBehaviour
     public GameObject bowObject;
 
     public bool isChange = true;
+    public bool canChangeWeapon = false;
 
 
     public static CollisionPlayer instance;
@@ -48,6 +49,9 @@ public class CollisionPlayer : MonoBehaviour
         {
             bowObject.SetActive(true);
             collision.gameObject.SetActive(false);
+            swordObject.SetActive(false);
+            canChangeWeapon = true;
+            isChange = false;
 
         }
         if (collision.transform.CompareTag("ElixirGrab"))
@@ -73,18 +77,22 @@ public class CollisionPlayer : MonoBehaviour
     }
     public void ChangeWeapon()
     {
-        if (isChange)
+        if (canChangeWeapon)
         {
-            swordObject.SetActive(false);
-            bowObject.SetActive(true);
-            isChange = false;
+            if (isChange)
+            {
+                swordObject.SetActive(false);
+                bowObject.SetActive(true);
+                isChange = false;
+            }
+            else
+            {
+                swordObject.SetActive(true);
+                bowObject.SetActive(false);
+                isChange = true;
+            }
         }
-        else
-        {
-            swordObject.SetActive(true);
-            bowObject.SetActive(false);
-            isChange = true;
-        }
+       
     }
 
 }

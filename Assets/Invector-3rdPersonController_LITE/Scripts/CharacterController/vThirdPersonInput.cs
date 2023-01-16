@@ -18,7 +18,6 @@ namespace Invector.vCharacterController
         public bool isBowShot = true;
         public bool canShoot = false;
 
-
         [Header("Camera Input")]
         public string rotateCameraXInput = "Mouse X";
         public string rotateCameraYInput = "Mouse Y";
@@ -216,7 +215,7 @@ namespace Invector.vCharacterController
 
         protected virtual void ChangeWeaponInput()
         {
-            if (Input.GetKeyDown(changeWeaponInput))
+            if (Input.GetKeyDown(changeWeaponInput) )
             {
                 cc.ChangeWeapon();
             }
