@@ -38,7 +38,8 @@ public class BowMechanic : MonoBehaviour
             newArrow.transform.rotation = cross.transform.rotation;
               // newArrow.GetComponent<Rigidbody>().AddForce(Vector3.forward *-1, ForceMode.Impulse);
            newArrow.transform.position = cross.transform.position;
-           newArrow.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * 900f);
+           newArrow.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * 4000f);
+            Destroy(newArrow, 4f);
         }
         else
         {
